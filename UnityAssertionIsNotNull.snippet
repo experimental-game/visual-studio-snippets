@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>UnityAssertionIsNotNull</Title>
+      <Author>Christian</Author>
+      <Description>
+	UnityEngine.Assertions.Assert.IsNotNull()
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ainn</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>fieldName</ID>
+          <ToolTip>Insert Field Name</ToolTip>
+          <Default>&lt;fieldName&gt;</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Object Editable="false">
+          <ID>className</ID>
+          <ToolTip>Insert Class Name</ToolTip>
+          <Default>&lt;className&gt;</Default>
+          <Function>ClassName()</Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[UnityEngine.Assertions.Assert.IsNotNull($fieldName$, "$fieldName$ on $className$ should not be null!");$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
